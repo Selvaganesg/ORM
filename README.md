@@ -4,6 +4,9 @@
 ## AIM
 To develop a Django application to store and retrieve data from Movies Database using Object Relational Mapping(ORM).
 
+## ENTITY RELATIONSHIP DIAGRAM
+![alt text](<WhatsApp Image 2025-04-23 at 11.48.21_11cbb2ac.jpg>)
+
 ## DESIGN STEPS
 
 ### STEP 1:
@@ -31,7 +34,7 @@ class Employee (models.Model):
     email=models.EmailField() 
 
 class EmployeeAdmin(admin.ModelAdmin): 
-        list_display=( 'eid','name','salary','age','email')
+        list_display=( 'userid','username','movie_name','no_of_seat')
 
 
 admin.py:from django.contrib import admin
@@ -42,7 +45,7 @@ admin.site.register(Employee,EmployeeAdmin)
 
 ## OUTPUT
 
-![alt text](<Screenshot 2025-04-15 164647.png>)
+![alt text](image.png)
 
 
 ## RESULT
